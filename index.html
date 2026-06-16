@@ -656,8 +656,17 @@ margin:10px 0;
 function unmuteVideo() {
   let video = document.getElementById("bgvideo");
   video.muted = false;
+  video.volume = 1;
   video.play();
 }
+
+// 🔥 auto aktif kalau user klik di mana saja
+document.addEventListener("click", function () {
+  let video = document.getElementById("bgvideo");
+  video.muted = false;
+  video.volume = 1;
+  video.play();
+}, { once: true });
 </script>
   
 </style>
