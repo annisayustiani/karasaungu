@@ -217,7 +217,7 @@ href="https://wa.me/6289656387208?text=Hallo%20Mingu,%20aku%20mau%20order%20yak!
 
 <header class="hero">
 
-<video id="bgvideo" autoplay muted loop playsinline>
+<video id="bgvideo"i loop playsinline>
   <source src="video-karasa-ungu.mp4" type="video/mp4">
 </video>
 
@@ -651,6 +651,8 @@ footer p{
 font-size:22px;
 margin:10px 0;
 }
+  
+</style>
 
 <script>
 function unmuteVideo() {
@@ -660,7 +662,7 @@ function unmuteVideo() {
   video.play();
 }
 
-// 🔥 auto aktif kalau user klik di mana saja
+// aktifkan suara saat user klik sekali
 document.addEventListener("click", function () {
   let video = document.getElementById("bgvideo");
   video.muted = false;
@@ -668,8 +670,6 @@ document.addEventListener("click", function () {
   video.play();
 }, { once: true });
 </script>
-  
-</style>
 
 </body>
 </html>
