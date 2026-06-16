@@ -217,8 +217,8 @@ href="https://wa.me/6289656387208?text=Hallo%20Mingu,%20aku%20mau%20order%20yak!
 
 <header class="hero">
 
-<video autoplay muted loop playsinline>
-<source src="video-karasa-ungu.mp4" type="video/mp4">
+<video id="bgvideo" autoplay muted loop playsinline>
+  <source src="video-karasa-ungu.mp4" type="video/mp4">
 </video>
 
 <nav>
@@ -254,6 +254,10 @@ sehat, lezat, dan penuh cita rasa.
 <a href="#produk" class="btn">
 Lihat Promo
 </a>
+  
+<button class="btn" onclick="unmuteVideo()">
+🔊 Nyalakan Suara
+</button>
 
 </div>
 
@@ -648,6 +652,14 @@ font-size:22px;
 margin:10px 0;
 }
 
+<script>
+function unmuteVideo() {
+  let video = document.getElementById("bgvideo");
+  video.muted = false;
+  video.play();
+}
+</script>
+  
 </style>
 
 </body>
