@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html lang="id">
+
 <head>
 
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Karasa Ungu</title>
+<title>KARASA UNGU</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Kalam:wght@400;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&family=Pacifico&display=swap" rel="stylesheet">
 
 <style>
 
@@ -15,363 +16,157 @@
 margin:0;
 padding:0;
 box-sizing:border-box;
+}
+
+html{
 scroll-behavior:smooth;
 }
 
 body{
-font-family:'Poppins',sans-serif;
-background:#faf7ff;
-color:#333;
+font-family:'Quicksand',sans-serif;
+background:#fff;
 overflow-x:hidden;
 }
 
-header{
-position:fixed;
-width:100%;
-top:0;
-z-index:1000;
-background:white;
-box-shadow:0 2px 15px rgba(0,0,0,.08);
-}
-
 nav{
+position:fixed;
+top:0;
+width:100%;
+padding:15px 8%;
 display:flex;
 justify-content:space-between;
 align-items:center;
-padding:15px 8%;
+background:rgba(255,255,255,.95);
+backdrop-filter:blur(10px);
+z-index:999;
 }
 
 .logo{
-display:flex;
-align-items:center;
-gap:10px;
-}
-
-.logo img{
-width:60px;
-}
-
-.logo h2{
-font-family:'Kalam',cursive;
-color:#7e22ce;
-font-size:2rem;
+width:85px;
+height:85px;
+border-radius:50%;
+object-fit:cover;
+box-shadow:0 5px 20px rgba(0,0,0,.15);
 }
 
 nav ul{
 display:flex;
-list-style:none;
 gap:30px;
+list-style:none;
 }
 
-nav ul li a{
+nav a{
 text-decoration:none;
-color:#444;
-font-weight:600;
-}
-
-.btn{
-background:#9333ea;
-color:white;
-padding:12px 25px;
-border-radius:50px;
-text-decoration:none;
+font-weight:700;
+color:#6a1b9a;
 }
 
 .hero{
-padding-top:120px;
-padding-left:8%;
-padding-right:8%;
-padding-bottom:80px;
-display:flex;
-align-items:center;
-justify-content:space-between;
-gap:50px;
+padding-top:150px;
+text-align:center;
 background:linear-gradient(
 135deg,
-#f8f0ff,
-#ffffff);
+#f7efff,
+#ead7ff
+);
+padding-bottom:100px;
 }
 
-.hero-text{
-flex:1;
+.hero h1{
+font-family:'Pacifico',cursive;
+font-size:90px;
+color:#6a1b9a;
 }
 
-.hero-text h1{
-font-size:4rem;
-font-family:'Kalam',cursive;
-color:#7e22ce;
-line-height:1.1;
+.hero h2{
+font-size:28px;
+color:#7d3cb5;
+margin-top:10px;
 }
 
-.hero-text p{
+.hero p{
 margin-top:20px;
-font-size:1.1rem;
-line-height:1.8;
+font-size:26px;
+font-weight:700;
+color:#5b2c83;
+line-height:1.5;
 }
 
-.hero-text .btn{
+.btn-order{
+
 display:inline-block;
-margin-top:25px;
+
+margin-top:30px;
+
+padding:16px 35px;
+
+background:#6a1b9a;
+
+color:white;
+
+text-decoration:none;
+
+border-radius:50px;
+
+font-weight:bold;
+
+box-shadow:
+0 10px 25px rgba(106,27,154,.3);
+
 }
 
 .hero-image{
-flex:1;
-text-align:center;
+
+margin-top:50px;
+
+display:flex;
+justify-content:center;
+
 }
 
 .hero-image img{
-width:100%;
-max-width:500px;
-border:10px solid #e9d5ff;
-border-radius:40px;
-box-shadow:0 15px 40px rgba(126,34,206,.25);
-}
 
-section{
-padding:90px 8%;
-}
+width:700px;
+max-width:90%;
 
-.title{
-text-align:center;
-font-size:3rem;
-font-family:'Kalam',cursive;
-color:#7e22ce;
-margin-bottom:50px;
-}
-
-</style>
-</head>
-
-<body>
-
-<header>
-
-<nav>
-
-<div class="logo">
-<img src="logo-karasa.png">
-<h2>Karasa Ungu</h2>
-</div>
-
-<ul>
-<li><a href="#menu">Menu</a></li>
-<li><a href="#manfaat">Manfaat</a></li>
-<li><a href="#tentang">Tentang</a></li>
-<li><a href="#testimoni">Testimoni</a></li>
-</ul>
-
-</nav>
-
-</header>
-
-<section class="hero">
-
-<div class="hero-text">
-
-<h1>
-Karasa Ungu,<br>
-Nikmatnya Bikin Rindu 💜
-</h1>
-
-<p>
-
-Minuman berbahan dasar ubi ungu pilihan yang diolah menjadi minuman kekinian dengan cita rasa creamy, segar, dan menyehatkan.
-
-Nikmati sensasi unik dari perpaduan ubi ungu berkualitas dengan berbagai varian rasa favorit yang cocok dinikmati kapan saja.
-
-</p>
-
-<a href="#menu" class="btn">
-Lihat Menu
-</a>
-
-</div>
-
-<div class="hero-image">
-
-<img src="hero-karasa-ungu_1.png">
-
-</div>
-
-</section>
-<style>
-
-.video-section{
 background:white;
-}
 
-.video-container{
-display:grid;
-grid-template-columns:1fr 1fr;
-gap:40px;
-align-items:center;
-}
-
-.video-container video{
-width:100%;
-border-radius:30px;
-box-shadow:0 15px 35px rgba(126,34,206,.2);
-}
-
-.video-text h2{
-font-family:'Kalam',cursive;
-font-size:3rem;
-color:#7e22ce;
-margin-bottom:20px;
-}
-
-.video-text p{
-line-height:1.9;
-font-size:1.05rem;
-}
-
-.fitur{
-margin-top:30px;
-display:grid;
-grid-template-columns:repeat(2,1fr);
-gap:20px;
-}
-
-.fitur div{
-background:#f5ecff;
 padding:15px;
-border-radius:20px;
+
+box-shadow:
+0 15px 40px rgba(106,27,154,.25);
+
+border-radius:
+58% 42% 65% 35% /
+38% 60% 40% 62%;
+
+}
+  .section-title{
 text-align:center;
-font-weight:600;
+font-size:55px;
+color:#6a1b9a;
+margin-bottom:50px;
+font-family:'Pacifico',cursive;
 }
-
-.manfaat{
-background:linear-gradient(
-135deg,
-#f8f0ff,
-#ffffff);
-}
-
-.manfaat-grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:25px;
-}
-
-.manfaat-card{
-background:white;
-padding:30px;
-border-radius:25px;
-box-shadow:0 10px 25px rgba(126,34,206,.15);
-transition:.4s;
-}
-
-.manfaat-card:hover{
-transform:translateY(-10px);
-}
-
-.manfaat-card h3{
-color:#7e22ce;
-margin-bottom:15px;
-}
-
-.manfaat-card p{
-line-height:1.8;
-}
-
-</style>
-
-<section class="video-section">
-
-<div class="video-container">
-
-<div>
-
-<video controls autoplay muted loop>
-<source src="video-karasa-ungu.mp4" type="video/mp4">
-</video>
-
-</div>
-
-<div class="video-text">
-
-<h2>
-Kesegaran Dalam Setiap Tegukan 💜
-</h2>
-
-<p>
-
-Karasa Ungu hadir dengan bahan baku ubi ungu pilihan yang kaya nutrisi dan antioksidan alami. Setiap minuman dibuat dengan bahan berkualitas sehingga menghasilkan rasa yang nikmat, creamy, dan menyegarkan.
-
-</p>
-
-<div class="fitur">
-
-<div>🍠 Ubi Ungu Pilihan</div>
-<div>✨ Tanpa Pewarna Buatan</div>
-<div>💜 Kaya Antioksidan</div>
-<div>🥤 Rasa Premium</div>
-
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-<section class="manfaat" id="manfaat">
-
-<h2 class="title">
-Manfaat Ubi Ungu 🍠
-</h2>
-
-<div class="manfaat-grid">
-
-<div class="manfaat-card">
-<h3>💜 Kaya Antioksidan</h3>
-<p>
-Mengandung antosianin yang membantu melindungi tubuh dari radikal bebas.
-</p>
-</div>
-
-<div class="manfaat-card">
-<h3>🛡️ Menjaga Imunitas</h3>
-<p>
-Membantu menjaga daya tahan tubuh agar tetap sehat dan bugar.
-</p>
-</div>
-
-<div class="manfaat-card">
-<h3>🌱 Baik Untuk Pencernaan</h3>
-<p>
-Kandungan serat membantu melancarkan sistem pencernaan.
-</p>
-</div>
-
-<div class="manfaat-card">
-<h3>⚡ Sumber Energi</h3>
-<p>
-Karbohidrat alami memberikan energi untuk aktivitas sehari-hari.
-</p>
-</div>
-
-</div>
-
-</section>
-<style>
 
 .menu{
+padding:100px 8%;
 background:white;
 }
 
-.produk-grid{
+.menu-container{
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
 gap:30px;
 }
 
 .card{
 background:white;
 border-radius:30px;
-overflow:hidden;
-box-shadow:0 10px 25px rgba(126,34,206,.15);
-transition:.4s;
+padding:20px;
+text-align:center;
+box-shadow:0 10px 30px rgba(0,0,0,.08);
+transition:.3s;
 }
 
 .card:hover{
@@ -382,409 +177,313 @@ transform:translateY(-10px);
 width:100%;
 height:280px;
 object-fit:cover;
+border-radius:25px;
 }
 
 .card h3{
-padding:15px 20px;
-font-family:'Kalam',cursive;
-font-size:2rem;
-color:#7e22ce;
+margin-top:15px;
+color:#6a1b9a;
 }
 
-.promo{
-background:#ec4899;
-color:white;
-padding:8px 15px;
-border-radius:30px;
-display:inline-block;
-margin-left:20px;
-margin-top:20px;
-font-size:.8rem;
+.card p{
+margin-top:10px;
+color:#555;
 }
 
-.harga-lama{
-text-decoration:line-through;
+.price{
+margin-top:15px;
+}
+
+.price del{
 color:#999;
-padding:0 20px;
+margin-right:10px;
 }
 
-.harga-baru{
-padding:0 20px;
-font-size:2rem;
+.price span{
+font-size:26px;
 font-weight:bold;
-color:#7e22ce;
-}
-
-.deskripsi{
-padding:15px 20px;
-line-height:1.8;
-}
-
-.manfaat-produk{
-padding:0 20px 25px;
-}
-
-.manfaat-produk ul{
-padding-left:20px;
-line-height:1.8;
-}
-
-</style>
-
-<section class="menu" id="menu">
-
-<h2 class="title">
-Menu Favorit Karasa Ungu 💜
-</h2>
-
-<div class="produk-grid">
-  <div class="card">
-
-<span class="promo">PROMO</span>
-
-<img src="original-purple.png">
-
-<h3>Purple Ori</h3>
-
-<p class="harga-lama">Rp13.000</p>
-<p class="harga-baru">Rp10.000</p>
-
-<p class="deskripsi">
-Rasa ubi ungu original yang lembut, manis alami, creamy, dan menjadi favorit pecinta cita rasa autentik.
-</p>
-
-<div class="manfaat-produk">
-<b>Manfaat:</b>
-<ul>
-<li>Kaya antioksidan</li>
-<li>Baik untuk pencernaan</li>
-<li>Menjaga daya tahan tubuh</li>
-<li>Sumber energi alami</li>
-</ul>
-</div>
-
-</div>
-<div class="card">
-
-<span class="promo">PROMO</span>
-
-<img src="purple-cheese.png">
-
-<h3>Purple Cheese</h3>
-
-<p class="harga-lama">Rp15.000</p>
-<p class="harga-baru">Rp13.000</p>
-
-<p class="deskripsi">
-Perpaduan ubi ungu creamy dengan topping keju gurih yang melimpah dan menggugah selera.
-</p>
-
-<div class="manfaat-produk">
-<b>Manfaat:</b>
-<ul>
-<li>Sumber kalsium</li>
-<li>Menambah energi</li>
-<li>Baik untuk kesehatan tulang</li>
-<li>Mengenyangkan lebih lama</li>
-</ul>
-</div>
-
-</div>
-<div class="card">
-
-<span class="promo">PROMO</span>
-
-<img src="purple-choco.png">
-
-<h3>Purple Choco</h3>
-
-<p class="harga-lama">Rp15.000</p>
-<p class="harga-baru">Rp13.000</p>
-
-<p class="deskripsi">
-Perpaduan sempurna ubi ungu dan cokelat premium dengan rasa manis yang nikmat.
-</p>
-
-<div class="manfaat-produk">
-<b>Manfaat:</b>
-<ul>
-<li>Meningkatkan mood</li>
-<li>Sumber antioksidan</li>
-<li>Memberi energi tambahan</li>
-<li>Favorit pecinta cokelat</li>
-</ul>
-</div>
-
-</div>
-<div class="card">
-
-<span class="promo">PROMO</span>
-
-<img src="purple-fresh.png">
-
-<h3>Purple Fresh</h3>
-
-<p class="harga-lama">Rp10.000</p>
-<p class="harga-baru">Rp8.000</p>
-
-<p class="deskripsi">
-Sensasi ubi ungu yang lebih ringan, segar, dan cocok diminum saat cuaca panas.
-</p>
-
-<div class="manfaat-produk">
-<b>Manfaat:</b>
-<ul>
-<li>Menyegarkan tubuh</li>
-<li>Membantu hidrasi</li>
-<li>Rendah rasa enek</li>
-<li>Memberi sensasi segar</li>
-</ul>
-</div>
-
-</div>
-
-</div>
-
-</section>
-<style>
-
-.why{
-background:linear-gradient(
-135deg,
-#f8f0ff,
-#ffffff);
-}
-
-.why-grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-gap:25px;
-}
-
-.why-card{
-background:white;
-padding:30px;
-border-radius:25px;
-text-align:center;
-box-shadow:0 10px 25px rgba(126,34,206,.12);
-transition:.4s;
-}
-
-.why-card:hover{
-transform:translateY(-10px);
-}
-
-.why-card h3{
-margin:15px 0;
-color:#7e22ce;
-}
-
-.why-card p{
-line-height:1.8;
+color:#8e24aa;
 }
 
 .about{
-background:white;
+padding:100px 8%;
+background:#faf5ff;
 }
 
 .about-container{
-display:grid;
-grid-template-columns:1fr 1fr;
-gap:50px;
+display:flex;
 align-items:center;
+gap:50px;
 }
 
 .about img{
-width:100%;
-max-width:450px;
-display:block;
-margin:auto;
+width:450px;
+max-width:100%;
+border-radius:30px;
+box-shadow:0 10px 30px rgba(0,0,0,.1);
 }
 
-.about-text h2{
-font-size:3rem;
-font-family:'Kalam',cursive;
-color:#7e22ce;
-margin-bottom:20px;
+.about p{
+line-height:1.8;
+font-size:18px;
 }
 
-.about-text p{
-line-height:2;
-margin-bottom:15px;
+.video{
+padding:100px 8%;
+text-align:center;
+}
+
+.video video{
+width:90%;
+border-radius:30px;
+box-shadow:0 10px 30px rgba(0,0,0,.15);
 }
 
 .testimoni{
-background:linear-gradient(
-135deg,
-#f3e8ff,
-#ffffff);
+padding:100px 8%;
+background:#faf5ff;
 }
 
-.testi-box{
-max-width:850px;
-margin:auto;
+.testi-container{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+}
+
+.testi-card{
 background:white;
-padding:40px;
-border-radius:30px;
-text-align:center;
-box-shadow:0 10px 30px rgba(126,34,206,.15);
+padding:25px;
+border-radius:25px;
+box-shadow:0 10px 25px rgba(0,0,0,.08);
 }
 
-.bintang{
-font-size:2rem;
-margin-bottom:20px;
-}
-
-.testi-box p{
-line-height:2;
-font-size:1.1rem;
-}
-
-.testi-box h4{
-margin-top:20px;
-color:#7e22ce;
-font-family:'Kalam',cursive;
-font-size:1.8rem;
+.testi-card h4{
+color:#6a1b9a;
+margin-top:15px;
 }
 
 footer{
-background:#6b21a8;
+background:#6a1b9a;
 color:white;
-padding:50px 8%;
 text-align:center;
+padding:50px 20px;
 }
 
-footer h2{
-font-family:'Kalam',cursive;
-font-size:2.5rem;
-margin-bottom:15px;
+.wa-float{
+position:fixed;
+bottom:25px;
+right:25px;
+width:65px;
+height:65px;
+background:#25D366;
+border-radius:50%;
+display:flex;
+justify-content:center;
+align-items:center;
+font-size:30px;
+text-decoration:none;
+z-index:9999;
+box-shadow:0 5px 20px rgba(0,0,0,.2);
+animation:bounce 2s infinite;
 }
 
-footer p{
-line-height:1.8;
+@keyframes bounce{
+0%,100%{transform:translateY(0);}
+50%{transform:translateY(-8px);}
 }
 
 @media(max-width:768px){
 
-.hero{
-flex-direction:column;
+.hero h1{
+font-size:55px;
 }
 
-.video-container{
-grid-template-columns:1fr;
+.hero p{
+font-size:20px;
 }
 
 .about-container{
-grid-template-columns:1fr;
+flex-direction:column;
 }
 
 nav ul{
 display:none;
 }
 
-.hero-text h1{
-font-size:3rem;
 }
+  </head>
 
-.title{
-font-size:2.4rem;
-}
+<body>
 
-}
+<nav>
 
-</style>
+<img src="logo-karasa.png" class="logo">
 
-<section class="why">
+<ul>
+<li><a href="#menu">Menu</a></li>
+<li><a href="#tentang">Tentang</a></li>
+<li><a href="#video">Video</a></li>
+<li><a href="#testimoni">Testimoni</a></li>
+</ul>
 
-<h2 class="title">
-Kenapa Harus Karasa Ungu? 💜
+</nav>
+
+<section class="hero">
+
+<h1>KARASA UNGU</h1>
+
+<h2>Karakter Rasa Ubi Ungu</h2>
+
+<p>
+Segarnya Ubi Ungu,<br>
+Karakternya Selalu Baru 💜
+</p>
+
+<a href="https://wa.me/6289656387208?text=Hai%20Mingu,%20aku%20mau%20order%20yak!" class="btn-order">
+Pesan Sekarang
+</a>
+
+<div class="hero-image">
+<img src="hero-karasa-ungu.png">
+</div>
+
+</section>
+  <section class="menu" id="menu">
+
+<h2 class="section-title">
+Menu Favorit 💜
 </h2>
 
-<div class="why-grid">
+<div class="menu-container">
 
-<div class="why-card">
-<h3>🍠 Ubi Ungu Pilihan</h3>
-<p>
-Menggunakan ubi ungu berkualitas tinggi yang kaya nutrisi dan dipilih langsung untuk menghasilkan cita rasa terbaik.
-</p>
+<div class="card">
+
+<img src="original-purple.png">
+
+<h3>Purple Original</h3>
+
+<p>Perpaduan ubi ungu dan susu yang creamy.</p>
+
+<div class="price">
+<del>Rp12.000</del>
+<span>Rp10.000</span>
 </div>
 
-<div class="why-card">
-<h3>🥤 Rasa Unik</h3>
-<p>
-Perpaduan rasa tradisional dan modern yang menghasilkan minuman kekinian yang berbeda dari yang lain.
-</p>
 </div>
 
-<div class="why-card">
-<h3>💜 Kaya Antioksidan</h3>
-<p>
-Mengandung antosianin alami yang baik untuk menjaga kesehatan tubuh dan melawan radikal bebas.
-</p>
+<div class="card">
+
+<img src="purple-cheese.png">
+
+<h3>Purple Cheese</h3>
+
+<p>Ubi ungu dengan topping keju premium.</p>
+
+<div class="price">
+<del>Rp15.000</del>
+<span>Rp13.000</span>
 </div>
 
-<div class="why-card">
-<h3>💰 Harga Terjangkau</h3>
-<p>
-Nikmat, berkualitas, dan ramah di kantong pelajar, mahasiswa, maupun keluarga.
-</p>
+</div>
+
+<div class="card">
+
+<img src="purple-choco.png">
+
+<h3>Purple Choco</h3>
+
+<p>Perpaduan ubi ungu dan cokelat lezat.</p>
+
+<div class="price">
+<del>Rp15.000</del>
+<span>Rp13.000</span>
+</div>
+
+</div>
+
+<div class="card">
+
+<img src="purple-fresh.png">
+
+<h3>Purple Fresh</h3>
+
+<p>Minuman segar berbahan ubi ungu.</p>
+
+<div class="price">
+<del>Rp10.000</del>
+<span>Rp8.000</span>
+</div>
+
 </div>
 
 </div>
 
 </section>
+  <section class="about" id="tentang">
 
-<section class="about" id="tentang">
+<h2 class="section-title">
+Tentang Kami
+</h2>
 
 <div class="about-container">
 
 <div>
 
+<p>
+KARASA UNGU adalah inovasi minuman berbahan dasar ubi ungu yang menghadirkan cita rasa unik, sehat, dan menyegarkan. Kami menggunakan bahan pilihan untuk menghasilkan minuman berkualitas yang disukai berbagai kalangan.
+</p>
+
+<br>
+
+<p>
+Selain lezat, ubi ungu kaya akan antioksidan, vitamin, dan serat yang baik untuk kesehatan tubuh.
+</p>
+
+</div>
+
 <img src="bahan-baku-ubi-ungu.png">
-
-</div>
-
-<div class="about-text">
-
-<h2>Tentang Karasa Ungu 💜</h2>
-
-<p>
-Karasa Ungu merupakan minuman kekinian berbahan dasar ubi ungu yang menghadirkan cita rasa unik, lezat, dan menyehatkan. Produk ini dibuat dari bahan pilihan yang diolah secara higienis untuk menghasilkan minuman berkualitas tinggi.
-</p>
-
-<p>
-Dengan berbagai varian rasa seperti Purple Ori, Purple Cheese, Purple Choco, dan Purple Fresh, Karasa Ungu hadir untuk memberikan pengalaman menikmati minuman yang berbeda dan berkesan.
-</p>
-
-<p>
-Kami percaya bahwa minuman tidak hanya harus enak, tetapi juga dapat memberikan manfaat bagi kesehatan. Karena itu, Karasa Ungu menggunakan ubi ungu yang kaya antioksidan dan nutrisi alami.
-</p>
-
-</div>
 
 </div>
 
 </section>
 
-<section class="testimoni" id="testimoni">
+<section class="video" id="video">
 
-<h2 class="title">
-Apa Kata Pelanggan? 💜
+<h2 class="section-title">
+Video KARASA UNGU
 </h2>
 
-<div class="testi-box">
+<video controls>
+<source src="video-karasa-ungu.mp4" type="video/mp4">
+</video>
 
-<div class="bintang">
+</section>
+
+<section class="testimoni" id="testimoni">
+
+<h2 class="section-title">
+Kata Mereka 💜
+</h2>
+
+<div class="testi-container">
+
+<div class="testi-card">
 ⭐⭐⭐⭐⭐
+<p>"Purple Cheese favorit aku banget!"</p>
+<h4>- Esa Sandika</h4>
 </div>
 
-<p>
-"Awalnya saya penasaran karena minuman ini berbahan dasar ubi ungu. Setelah mencoba Purple Cheese dan Purple Choco, ternyata rasanya sangat enak, creamy, dan tidak membuat enek. Harganya juga terjangkau dan cocok diminum kapan saja. Karasa Ungu benar-benar memberikan pengalaman minum yang berbeda dan bikin ketagihan."
-</p>
+<div class="testi-card">
+⭐⭐⭐⭐⭐
+<p>"Rasa ubinya berasa dan tidak enek."</p>
+<h4>- Nanda</h4>
+</div>
 
-<h4>
-👨 Esa Sandika
-</h4>
+<div class="testi-card">
+⭐⭐⭐⭐⭐
+<p>"Segar, manisnya pas, cocok diminum siang hari."</p>
+<h4>- Aisyah</h4>
+</div>
 
 </div>
 
@@ -792,25 +491,21 @@ Apa Kata Pelanggan? 💜
 
 <footer>
 
-<h2>Karasa Ungu 💜</h2>
+<h2>KARASA UNGU 💜</h2>
 
-<p>
-Nikmatnya Bikin Rindu
-</p>
+<p>Karakter Rasa Ubi Ungu</p>
 
 <br>
 
-<p>
-Minuman berbahan dasar ubi ungu yang menghadirkan kesegaran, cita rasa premium, dan manfaat kesehatan dalam setiap tegukan.
-</p>
+<p>Instagram : @berkarakter.id</p>
 
-<br>
-
-<p>
-© 2026 Karasa Ungu. All Rights Reserved.
-</p>
+<p>WhatsApp : 089656387208</p>
 
 </footer>
+
+<a href="https://wa.me/6289656387208?text=Hai%20Mingu,%20aku%20mau%20order%20yak!" class="wa-float">
+💬
+</a>
 
 </body>
 </html>
