@@ -6,9 +6,9 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>KARASA UNGU</title>
+<title>Karasa Ungu</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&family=Pacifico&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
 <style>
 
@@ -16,6 +16,7 @@
 margin:0;
 padding:0;
 box-sizing:border-box;
+font-family:'Cormorant Garamond',serif;
 }
 
 html{
@@ -23,466 +24,581 @@ scroll-behavior:smooth;
 }
 
 body{
-font-family:'Quicksand',sans-serif;
-background:#fff;
+background:#faf7ff;
 overflow-x:hidden;
+}
+
+.hero{
+height:100vh;
+position:relative;
+overflow:hidden;
+}
+
+.hero video{
+position:absolute;
+width:100%;
+height:100%;
+object-fit:cover;
+}
+
+.hero::before{
+content:'';
+position:absolute;
+width:100%;
+height:100%;
+background:rgba(0,0,0,.45);
+z-index:1;
 }
 
 nav{
 position:fixed;
-top:0;
-width:100%;
-padding:15px 8%;
+top:20px;
+left:50%;
+transform:translateX(-50%);
+width:90%;
+max-width:1200px;
+padding:15px 30px;
+
 display:flex;
 justify-content:space-between;
 align-items:center;
-background:rgba(255,255,255,.95);
-backdrop-filter:blur(10px);
+
+background:rgba(255,255,255,.12);
+backdrop-filter:blur(15px);
+
+border-radius:100px;
+
 z-index:999;
 }
 
 .logo{
-width:85px;
-height:85px;
+display:flex;
+align-items:center;
+gap:12px;
+}
+
+.logo img{
+width:65px;
+height:65px;
 border-radius:50%;
 object-fit:cover;
-box-shadow:0 5px 20px rgba(0,0,0,.15);
+border:2px solid white;
 }
 
-nav ul{
+.logo h2{
+color:white;
+font-size:28px;
+}
+
+.menu{
 display:flex;
 gap:30px;
-list-style:none;
 }
 
-nav a{
+.menu a{
 text-decoration:none;
-font-weight:700;
-color:#6a1b9a;
+color:white;
+font-size:22px;
 }
 
-.hero{
-padding-top:150px;
+.hero-content{
+position:relative;
+z-index:2;
+
+height:100vh;
+
+display:flex;
+justify-content:center;
+align-items:center;
+flex-direction:column;
+
 text-align:center;
-background:linear-gradient(
-135deg,
-#f7efff,
-#ead7ff
-);
-padding-bottom:100px;
+
+padding:20px;
 }
 
-.hero h1{
-font-family:'Pacifico',cursive;
+.hero-content h1{
 font-size:90px;
-color:#6a1b9a;
+color:white;
 }
 
-.hero h2{
-font-size:28px;
-color:#7d3cb5;
-margin-top:10px;
-}
-
-.hero p{
-margin-top:20px;
+.hero-content p{
 font-size:26px;
-font-weight:700;
-color:#5b2c83;
-line-height:1.5;
+color:white;
+max-width:800px;
+margin-top:15px;
 }
 
-.btn-order{
-
-display:inline-block;
-
+.btn{
 margin-top:30px;
 
-padding:16px 35px;
+padding:15px 45px;
 
-background:#6a1b9a;
+border-radius:50px;
+
+background:rgba(255,255,255,.15);
+
+backdrop-filter:blur(10px);
 
 color:white;
 
 text-decoration:none;
 
-border-radius:50px;
-
-font-weight:bold;
-
-box-shadow:
-0 10px 25px rgba(106,27,154,.3);
-
+font-size:22px;
 }
 
-.hero-image{
+section{
+padding:100px 8%;
+}
 
-margin-top:50px;
+.title{
+text-align:center;
+margin-bottom:60px;
+}
+
+.title h2{
+font-size:55px;
+color:#6f2dbd;
+}
+
+.title p{
+font-size:22px;
+}
+
+.whatsapp{
+position:fixed;
+right:25px;
+bottom:25px;
+width:70px;
+height:70px;
+
+background:#25D366;
+
+border-radius:50%;
 
 display:flex;
 justify-content:center;
+align-items:center;
 
+font-size:35px;
+
+text-decoration:none;
+
+z-index:999;
+box-shadow:0 10px 30px rgba(0,0,0,.2);
 }
 
-.hero-image img{
-
-width:700px;
-max-width:90%;
-
-background:white;
-
-padding:15px;
-
-box-shadow:
-0 15px 40px rgba(106,27,154,.25);
-
-border-radius:
-58% 42% 65% 35% /
-38% 60% 40% 62%;
-
-}
-  .section-title{
-text-align:center;
-font-size:55px;
-color:#6a1b9a;
-margin-bottom:50px;
-font-family:'Pacifico',cursive;
-}
+@media(max-width:768px){
 
 .menu{
-padding:100px 8%;
-background:white;
+display:none;
 }
 
-.menu-container{
+.hero-content h1{
+font-size:55px;
+}
+
+.hero-content p{
+font-size:20px;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<a class="whatsapp"
+href="https://wa.me/6289656387208?text=Hallo%20Mingu,%20aku%20mau%20order%20yak!">
+💬
+</a>
+
+<header class="hero">
+
+<video autoplay muted loop playsinline>
+<source src="video-karasa-ungu.mp4" type="video/mp4">
+</video>
+
+<nav>
+
+<div class="logo">
+
+<img src="logo-karasa.png">
+
+<h2>Karasa Ungu</h2>
+
+</div>
+
+<div class="menu">
+
+<a href="#tentang">Tentang</a>
+<a href="#produk">Produk</a>
+<a href="#manfaat">Manfaat</a>
+<a href="#testimoni">Testimoni</a>
+
+</div>
+
+</nav>
+
+<div class="hero-content">
+
+<h1>Karasa Ungu</h1>
+
+<p>
+Nikmati kelembutan ubi ungu dalam setiap tegukan,
+sehat, lezat, dan penuh cita rasa.
+</p>
+
+<a href="#produk" class="btn">
+Lihat Promo
+</a>
+
+</div>
+
+</header>
+<section id="tentang">
+
+<div class="title">
+<h2>Tentang Kami</h2>
+<p>Minuman sehat dengan cita rasa kekinian.</p>
+</div>
+
+<div class="about">
+
+<div class="about-img">
+<img src="bahan-baku-ubi-ungu.png">
+</div>
+
+<div class="about-text">
+
+<h3>Karasa Ungu</h3>
+
+<p>
+Karasa Ungu merupakan minuman berbahan dasar ubi ungu yang menghadirkan perpaduan rasa lezat, tekstur lembut, dan manfaat kesehatan dalam satu gelas.
+</p>
+
+<p>
+Dibuat dari bahan pilihan berkualitas, Karasa Ungu menjadi pilihan minuman yang cocok untuk segala usia dan dapat dinikmati kapan saja.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="title">
+<h2>Kenapa Memilih Karasa Ungu?</h2>
+<p>Lebih sehat, lebih nikmat, lebih berkesan.</p>
+</div>
+
+<div class="fitur">
+
+<div class="card">
+<div class="emoji">🌱</div>
+<h3>100% Ubi Ungu</h3>
+<p>Menggunakan bahan utama ubi ungu pilihan berkualitas.</p>
+</div>
+
+<div class="card">
+<div class="emoji">💜</div>
+<h3>Rasa Unik</h3>
+<p>Perpaduan rasa khas yang sulit ditemukan pada minuman lain.</p>
+</div>
+
+<div class="card">
+<div class="emoji">⭐</div>
+<h3>Kualitas Premium</h3>
+<p>Dibuat dengan standar kualitas terbaik.</p>
+</div>
+
+<div class="card">
+<div class="emoji">🥤</div>
+<h3>Harga Bersahabat</h3>
+<p>Nikmat tanpa membuat kantong menjerit.</p>
+</div>
+
+</div>
+
+</section>
+
+<style>
+
+.about{
+display:flex;
+gap:60px;
+align-items:center;
+flex-wrap:wrap;
+}
+
+.about-img{
+flex:1;
+min-width:300px;
+}
+
+.about-img img{
+width:100%;
+border-radius:40px;
+}
+
+.about-text{
+flex:1;
+min-width:300px;
+}
+
+.about-text h3{
+font-size:50px;
+color:#6f2dbd;
+margin-bottom:20px;
+}
+
+.about-text p{
+font-size:22px;
+line-height:1.8;
+margin-bottom:20px;
+}
+
+.fitur{
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:30px;
+gap:25px;
 }
 
 .card{
 background:white;
-border-radius:30px;
-padding:20px;
+padding:35px;
+border-radius:35px;
 text-align:center;
-box-shadow:0 10px 30px rgba(0,0,0,.08);
-transition:.3s;
+box-shadow:0 15px 35px rgba(111,45,189,.08);
+transition:.4s;
 }
 
 .card:hover{
 transform:translateY(-10px);
 }
 
-.card img{
-width:100%;
-height:280px;
-object-fit:cover;
-border-radius:25px;
+.emoji{
+font-size:60px;
+margin-bottom:15px;
 }
 
 .card h3{
-margin-top:15px;
-color:#6a1b9a;
+font-size:30px;
+color:#6f2dbd;
+margin-bottom:10px;
 }
 
 .card p{
-margin-top:10px;
-color:#555;
-}
-
-.price{
-margin-top:15px;
-}
-
-.price del{
-color:#999;
-margin-right:10px;
-}
-
-.price span{
-font-size:26px;
-font-weight:bold;
-color:#8e24aa;
-}
-
-.about{
-padding:100px 8%;
-background:#faf5ff;
-}
-
-.about-container{
-display:flex;
-align-items:center;
-gap:50px;
-}
-
-.about img{
-width:450px;
-max-width:100%;
-border-radius:30px;
-box-shadow:0 10px 30px rgba(0,0,0,.1);
-}
-
-.about p{
-line-height:1.8;
-font-size:18px;
-}
-
-.video{
-padding:100px 8%;
-text-align:center;
-}
-
-.video video{
-width:90%;
-border-radius:30px;
-box-shadow:0 10px 30px rgba(0,0,0,.15);
-}
-
-.testimoni{
-padding:100px 8%;
-background:#faf5ff;
-}
-
-.testi-container{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:25px;
-}
-
-.testi-card{
-background:white;
-padding:25px;
-border-radius:25px;
-box-shadow:0 10px 25px rgba(0,0,0,.08);
-}
-
-.testi-card h4{
-color:#6a1b9a;
-margin-top:15px;
-}
-
-footer{
-background:#6a1b9a;
-color:white;
-text-align:center;
-padding:50px 20px;
-}
-
-.wa-float{
-position:fixed;
-bottom:25px;
-right:25px;
-width:65px;
-height:65px;
-background:#25D366;
-border-radius:50%;
-display:flex;
-justify-content:center;
-align-items:center;
-font-size:30px;
-text-decoration:none;
-z-index:9999;
-box-shadow:0 5px 20px rgba(0,0,0,.2);
-animation:bounce 2s infinite;
-}
-
-@keyframes bounce{
-0%,100%{transform:translateY(0);}
-50%{transform:translateY(-8px);}
-}
-
-@media(max-width:768px){
-
-.hero h1{
-font-size:55px;
-}
-
-.hero p{
 font-size:20px;
 }
 
-.about-container{
-flex-direction:column;
-}
+</style>
+<section id="produk">
 
-nav ul{
-display:none;
-}
-
-}
-  </head>
-
-<body>
-
-<nav>
-
-<img src="logo-karasa.png" class="logo">
-
-<ul>
-<li><a href="#menu">Menu</a></li>
-<li><a href="#tentang">Tentang</a></li>
-<li><a href="#video">Video</a></li>
-<li><a href="#testimoni">Testimoni</a></li>
-</ul>
-
-</nav>
-
-<section class="hero">
-
-<h1>KARASA UNGU</h1>
-
-<h2>Karakter Rasa Ubi Ungu</h2>
-
-<p>
-Segarnya Ubi Ungu,<br>
-Karakternya Selalu Baru 💜
-</p>
-
-<a href="https://wa.me/6289656387208?text=Hai%20Mingu,%20aku%20mau%20order%20yak!" class="btn-order">
-Pesan Sekarang
-</a>
-
-<div class="hero-image">
-<img src="hero-karasa-ungu.png">
+<div class="title">
+<h2>Promo Hari Ini</h2>
+<p>Buruan sebelum kehabisan.</p>
 </div>
 
-</section>
-  <section class="menu" id="menu">
+<div class="produk-grid">
 
-<h2 class="section-title">
-Menu Favorit 💜
-</h2>
-
-<div class="menu-container">
-
-<div class="card">
+<div class="produk-card">
 
 <img src="original-purple.png">
 
-<h3>Purple Original</h3>
+<h3>Purple Ori</h3>
 
-<p>Perpaduan ubi ungu dan susu yang creamy.</p>
-
-<div class="price">
-<del>Rp12.000</del>
-<span>Rp10.000</span>
+<div class="harga">
+<span class="lama">Rp13.000</span>
+<span class="baru">Rp10.000</span>
 </div>
 
-</div>
-
-<div class="card">
-
-<img src="purple-cheese.png">
-
-<h3>Purple Cheese</h3>
-
-<p>Ubi ungu dengan topping keju premium.</p>
-
-<div class="price">
-<del>Rp15.000</del>
-<span>Rp13.000</span>
-</div>
+<p>
+Rasa original ubi ungu yang lembut dan autentik.
+</p>
 
 </div>
 
-<div class="card">
-
-<img src="purple-choco.png">
-
-<h3>Purple Choco</h3>
-
-<p>Perpaduan ubi ungu dan cokelat lezat.</p>
-
-<div class="price">
-<del>Rp15.000</del>
-<span>Rp13.000</span>
-</div>
-
-</div>
-
-<div class="card">
+<div class="produk-card">
 
 <img src="purple-fresh.png">
 
 <h3>Purple Fresh</h3>
 
-<p>Minuman segar berbahan ubi ungu.</p>
-
-<div class="price">
-<del>Rp10.000</del>
-<span>Rp8.000</span>
+<div class="harga">
+<span class="lama">Rp10.000</span>
+<span class="baru">Rp8.000</span>
 </div>
-
-</div>
-
-</div>
-
-</section>
-  <section class="about" id="tentang">
-
-<h2 class="section-title">
-Tentang Kami
-</h2>
-
-<div class="about-container">
-
-<div>
 
 <p>
-KARASA UNGU adalah inovasi minuman berbahan dasar ubi ungu yang menghadirkan cita rasa unik, sehat, dan menyegarkan. Kami menggunakan bahan pilihan untuk menghasilkan minuman berkualitas yang disukai berbagai kalangan.
-</p>
-
-<br>
-
-<p>
-Selain lezat, ubi ungu kaya akan antioksidan, vitamin, dan serat yang baik untuk kesehatan tubuh.
+Perpaduan segar dan ringan yang cocok dinikmati kapan saja.
 </p>
 
 </div>
 
-<img src="bahan-baku-ubi-ungu.png">
+<div class="produk-card">
+
+<img src="purple-choco.png">
+
+<h3>Purple Choco</h3>
+
+<div class="harga">
+<span class="lama">Rp15.000</span>
+<span class="baru">Rp13.000</span>
+</div>
+
+<p>
+Perpaduan cokelat premium dan ubi ungu yang nikmat.
+</p>
+
+</div>
+
+<div class="produk-card">
+
+<img src="purple-cheese.png">
+
+<h3>Purple Cheese</h3>
+
+<div class="harga">
+<span class="lama">Rp15.000</span>
+<span class="baru">Rp13.000</span>
+</div>
+
+<p>
+Topping keju creamy yang berpadu sempurna dengan ubi ungu.
+</p>
+
+</div>
 
 </div>
 
 </section>
 
-<section class="video" id="video">
+<style>
 
-<h2 class="section-title">
-Video KARASA UNGU
-</h2>
+.produk-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:30px;
+}
 
-<video controls>
-<source src="video-karasa-ungu.mp4" type="video/mp4">
-</video>
+.produk-card{
+background:white;
+padding:25px;
+border-radius:35px;
+text-align:center;
+box-shadow:0 15px 35px rgba(111,45,189,.08);
+transition:.4s;
+}
+
+.produk-card:hover{
+transform:translateY(-10px);
+}
+
+.produk-card img{
+width:100%;
+border-radius:25px;
+}
+
+.produk-card h3{
+font-size:35px;
+color:#6f2dbd;
+margin-top:15px;
+}
+
+.harga{
+margin:15px 0;
+}
+
+.lama{
+text-decoration:line-through;
+font-size:24px;
+color:#888;
+}
+
+.baru{
+font-size:35px;
+font-weight:bold;
+color:#8a2be2;
+margin-left:10px;
+}
+
+.produk-card p{
+font-size:20px;
+}
+
+</style>
+<section id="manfaat">
+
+<div class="title">
+<h2>Manfaat Ubi Ungu</h2>
+<p>Bukan cuma enak, tapi juga bermanfaat.</p>
+</div>
+
+<div class="fitur">
+
+<div class="card">
+🛡️
+<h3>Antioksidan Tinggi</h3>
+<p>Membantu melindungi tubuh dari radikal bebas.</p>
+</div>
+
+<div class="card">
+❤️
+<h3>Menjaga Kesehatan</h3>
+<p>Baik untuk menjaga kesehatan tubuh secara umum.</p>
+</div>
+
+<div class="card">
+⚡
+<h3>Sumber Energi</h3>
+<p>Memberikan energi untuk menunjang aktivitas harian.</p>
+</div>
+
+<div class="card">
+🌿
+<h3>Kaya Serat</h3>
+<p>Membantu menjaga kesehatan sistem pencernaan.</p>
+</div>
+
+</div>
 
 </section>
+<section id="testimoni">
 
-<section class="testimoni" id="testimoni">
-
-<h2 class="section-title">
-Kata Mereka 💜
-</h2>
-
-<div class="testi-container">
-
-<div class="testi-card">
-⭐⭐⭐⭐⭐
-<p>"Purple Cheese favorit aku banget!"</p>
-<h4>- Esa Sandika</h4>
+<div class="title">
+<h2>Testimoni Pelanggan</h2>
+<p>Mereka sudah mencoba Karasa Ungu.</p>
 </div>
 
-<div class="testi-card">
-⭐⭐⭐⭐⭐
-<p>"Rasa ubinya berasa dan tidak enek."</p>
-<h4>- Nanda</h4>
+<div class="fitur">
+
+<div class="card">
+<h3>⭐⭐⭐⭐⭐</h3>
+<p>
+"Purple Cheese favoritku! Rasanya creamy banget."
+</p>
+<b>- Salsa</b>
 </div>
 
-<div class="testi-card">
-⭐⭐⭐⭐⭐
-<p>"Segar, manisnya pas, cocok diminum siang hari."</p>
-<h4>- Aisyah</h4>
+<div class="card">
+<h3>⭐⭐⭐⭐⭐</h3>
+<p>
+"Harganya murah tapi kualitasnya premium."
+</p>
+<b>- Esa</b>
+</div>
+
+<div class="card">
+<h3>⭐⭐⭐⭐⭐</h3>
+<p>
+"Minuman sehat yang tetap enak diminum setiap hari."
+</p>
+<b>- Nabila</b>
 </div>
 
 </div>
@@ -491,21 +607,48 @@ Kata Mereka 💜
 
 <footer>
 
-<h2>KARASA UNGU 💜</h2>
+<img src="logo-karasa.png">
 
-<p>Karakter Rasa Ubi Ungu</p>
+<h2>Karasa Ungu</h2>
 
-<br>
+<p>
+Nikmati kelembutan ubi ungu dalam setiap tegukan.
+</p>
 
-<p>Instagram : @berkarakter.id</p>
-
-<p>WhatsApp : 089656387208</p>
+<p>
+© 2026 Karasa Ungu. All Rights Reserved.
+</p>
 
 </footer>
 
-<a href="https://wa.me/6289656387208?text=Hai%20Mingu,%20aku%20mau%20order%20yak!" class="wa-float">
-💬
-</a>
+<style>
+
+footer{
+background:linear-gradient(135deg,#6f2dbd,#8a2be2);
+padding:80px 20px;
+text-align:center;
+color:white;
+margin-top:60px;
+}
+
+footer img{
+width:100px;
+height:100px;
+border-radius:50%;
+margin-bottom:20px;
+}
+
+footer h2{
+font-size:45px;
+margin-bottom:15px;
+}
+
+footer p{
+font-size:22px;
+margin:10px 0;
+}
+
+</style>
 
 </body>
 </html>
